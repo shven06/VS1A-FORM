@@ -38,19 +38,20 @@
       }
       input[type="number"]
       {
-        border: 3px solid rgb(0, 48, 160);
+        border: 3px solid rgb(0, 0, 50);
+       border-bottom-color:red;
         height: 1.5em;
         width: 3.6em;
         font-size: 1.5em;
         border-radius: 5px;
       }
       input[type="radio"]{
-        height: 4em;
-        width: 3em;
+        height: 5em;
+        width: 5em;
       }
       input[type="checkbox"]{
-        height: 3em;
-        width: 3em;
+        height: 4em;
+        width: 4em;
         clip-path: circle(50%);
         accent-color: rgb(74, 246, 143);
         appearance:none;
@@ -80,6 +81,9 @@
       font-size: 1.8em;
        letter-spacing: 4px;     
     }
+        #inpPrice {
+        width:5em;
+        }
          body {
       position: relative;
     }
@@ -178,12 +182,12 @@
 <br><BR>
       <label for="PRICE">TOTAL PRICE EXPECTATION<br>
           <nobr>INR:</label>
-        <input type="number" name="TOTAL PRICE EXPECTATION IN CRORES EXCLUDING MEDIA " min="100" id="PRICE">CR</nobr>
+        <input id="inpPrice" type="number" name="TOTAL PRICE EXPECTATION IN CRORES EXCLUDING MEDIA " min="100" id="PRICE">CR</nobr>
   <br>[&#9733 NOTE: 1000CR per inch is the maximum payable as of now] <br>[Seller's demand price will be considered after valuation on basis of lab report]<br>
     
       <label for="MName">FORMAT FORWARDED BY :</label>
       <input type="text" name="SENT BY " maxlength="26" id="MName" placeholder="  Name" >
-      <input type="text" name="Sender Contact number " maxlength="10" id="MName" placeholder="91+ (Phone number)">
+      <input type="text" name="Sender Contact number " maxlength="10" id="MName" placeholder="91+ Contact number">
 <br>&#x1F809<BR>
   <label for="comments">ADD MORE INFORMATION :</label>
   <textarea rows="4" cols="27" name="MORE INFO" id="comments" ></textarea>
